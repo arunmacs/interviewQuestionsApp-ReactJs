@@ -1,0 +1,10 @@
+.interview-question-app-container {
+  padding: 10px;
+}
+
+.questions-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
