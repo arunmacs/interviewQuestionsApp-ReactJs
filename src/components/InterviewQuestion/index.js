@@ -41,7 +41,7 @@ const InterviewQuestion = props => {
   return (
     <div className="question-container">
       <div className="filter-tags-container">
-        <p
+        <span
           className="tag-text"
           style={{
             color: `${filterTagColors[randomColor]}`,
@@ -49,8 +49,8 @@ const InterviewQuestion = props => {
           }}
         >
           {difficultyLevel}
-        </p>
-        <p
+        </span>
+        <span
           className="tag-text"
           style={{
             color: `${filterTagColors[randomColor - 1]}`,
@@ -58,7 +58,7 @@ const InterviewQuestion = props => {
           }}
         >
           {language}
-        </p>
+        </span>
       </div>
       <h1 className="question-text">{questionText}</h1>
       <button type="button" onClick={toggleShowHide}>
