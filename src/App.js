@@ -118,7 +118,7 @@ class App extends Component {
     return (
       <div className="container">
         <div className="banner-container">
-          <h1 className="heading">30 Seconds of Interview</h1>
+          <h1 className="heading">30 Seconds of Interviews</h1>
           <img
             src="https://assets.ccbp.in/frontend/react-js/interview-questions-img.png"
             alt="interview-question-app"

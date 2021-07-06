@@ -1,6 +1,5 @@
 .filters-container {
-  width: 90%;
-  padding: 5px 8px 10px 16px;
+  padding: 5px 8px 20px 16px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -12,22 +11,19 @@ select {
   background-color: transparent;
   border: 1px solid #cbd2d9;
   border-radius: 3px;
+  color: #0f172a;
   font-size: 13px;
   text-align: center;
   font-weight: 600;
   padding: 4px 15px 4px 10px;
 }
 
-.category-filter-container {
+.filter-container {
   margin: 6px 15px 6px 15px;
 }
 
-.language-text {
-}
-
-.level-filter-container {
-  margin: 6px 15px 6px 15px;
-}
-
-.difficulty-text {
+.filter-text {
+  color: #7b8794;
+  font-size: 12px;
+  font-weight: 500;
 }

@@ -1,17 +1,21 @@
 import './index.css'
 
 const Filters = props => {
-  const {categoryData, levelsData} = props
+  const {categoryData, levelsData, languageFilter, levelFilter} = props
 
-  const onSelectOption = event => {
-    console.log(event.target.value)
+  const onSelectLanguagesOption = event => {
+    languageFilter(event.target.value)
+  }
+
+  const onSelectLevelsOption = event => {
+    levelFilter(event.target.value)
   }
 
   return (
     <div className="filters-container">
-      <div className="category-filter-container">
-        <p className="language-text">Language</p>
-        <select onChange={onSelectOption}>
+      <div className="filter-container">
+        <p className="filter-text ">LANGUAGE</p>
+        <select onChange={onSelectLanguagesOption}>
           {categoryData.map(category => (
             <option key={category.id} value={category.language}>
               {category.language}
@@ -19,9 +23,9 @@ const Filters = props => {
           ))}
         </select>
       </div>
-      <div className="level-filter-container">
-        <p className="difficulty-text">Difficulty</p>
-        <select onChange={onSelectOption}>
+      <div className="filter-container">
+        <p className="filter-text ">DIFFICULTY</p>
+        <select onChange={onSelectLevelsOption}>
           {levelsData.map(level => (
             <option key={level.id} value={level.level}>
               {level.level}
